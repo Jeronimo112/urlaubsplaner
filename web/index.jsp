@@ -1,3 +1,5 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,6 +18,8 @@
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="datepicker/css/datepicker.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +44,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Urlaubsplanung</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,13 +55,13 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Datum auswählen</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">Budget auswählen</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Ziele auswählen</a>
                     </li>
                 </ul>
             </div>
@@ -71,11 +75,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                    <h1>Urlaubsbuchung</h1>
+                    
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -84,9 +88,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>About Section</h1>
+                    <h1 class="ueberschrift">Datum</h1>
                 </div>
             </div>
+            <div id="datepicker" class="row">
+                <div class="text1">
+                    Erster Vorschlag
+                </div>
+                
+                <div>Von:<input id="dpd1"></>
+                     Bis:<input id="dpd2"></>
+                </div>
+            </div>
+            <div class="text1">
+                    Zweiter Vorschlag
+                </div>
+                
+                <div>Von:<input id="dpd1"></>
+                     Bis:<input id="dpd2"></>
+                </div>
+            <div class="text1">
+                    Dritter Vorschlag
+                </div>
+                
+                <div>Von:<input id="dpd1"></>
+                     Bis:<input id="dpd2"></>
+                </div>
         </div>
     </section>
 
@@ -95,7 +122,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Services Section</h1>
+                    <h1>Budget</h1>
                 </div>
             </div>
         </div>
@@ -106,7 +133,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>Contact Section</h1>
+                    <h1>Reiseziel</h1>
                 </div>
             </div>
         </div>
@@ -122,6 +149,9 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
 
+      <!-- Datepicker Script -->
+    <script src="datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="datepicker/js/picker.js"></script>
 </body>
 
 </html>
